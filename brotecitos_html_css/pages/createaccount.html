@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins:wght@400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Registrate</title>
+    <link rel="shortcut icon" href="../assets/image/account.png" type="image/x-icon">
+</head>
+<body>
+<!--Nav-->
+
+    <header>
+        <nav class="navbar">
+            <a href="">
+                <img src="../assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100" height="100">
+            </a>
+            <ul id="menu">
+                <li class="lista">
+                    <a href="../index.html"> Inicio</a>
+                </li>
+                <li class="lista">
+                    <a href="../pages/product.html"> Tienda</a>
+                </li>
+                <li class="lista">
+                    <a href="#acercade"> Acerca de </a>
+                </li>
+                <li class="lista">
+                    <a href="../pages/contacts.html"> Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1> ¡Bienvenida a Brotecitos!</h1>
+        <p> Crea tu cuenta y disfruta de los siguientes beneficios:</p>
+        <ul class="tex">
+            <li class="tex">Acceso exclusivo a ofertas y descuentos</li>
+            <li class="tex">Compra rápida y segura</li>
+            <li class="tex">Guarda tus favoritos para más tarde</li>
+            <li class="tex">Sigue el estado de tus pedidos</li>
+        </ul>
+    </main>
+<!--Formulario-->
+    <form action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
+        <h1> Crea tu cuenta</h1>
+        <p>Es facil y gratis</p>
+        <div>
+            <label for="nombre">Nombre completo </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Indroduzca su nombre" required/>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Escribre tu e-mail" required />
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="contraseña" id="password" placeholder="Escribe tu contraseña"/>
+        </div>
+        <div>
+            <h5>Debe tener al menos 8 carácteres</h5> 
+            <input type="checkbox" name="terminos y condiciones" value="1" required/>
+            <label for="terminos y condiciones"> Al crear una cuenta significa que acepta nuestros Términos y condiciones y nuestra Política de seguridad. </label>
+        </div>
+        <div><input type="submit" value="Iniciar Sesión"></div>
+    </form>
+    <p>¿Ya tenes Cuenta? <a href="login.html">Inicia Sesión</a></p>
+<!-- Footer -->
+<footer class="footer">
+    <h2>Brotecitos</h2>
+    <nav class=footer_nav>
+        <div class="contactanos">
+            <h3>Contactos</h3>
+            <p>abcdefgh@gmail.com</p>
+            <p>+1-2345-6789</p>
+            <p>123 Ave, Córdoba, Argentina</p>
+            <img src="../assets/image/instagram.png" alt="Enlace a intagram">
+            <img src="../assets/image/facebook.png" alt="Enlace a facebook">
+            <img src="../assets/image/x.png" alt="Enlace a X">
+        </div>
+        <div class="productos">
+            <h3>Productos</h3>
+            <p>Suculentas</p>
+            <p>Monsteras</p>
+            <p>Pothus</p>
+            <p>Rosario</p>
+            <p>Cactus</p>
+        </div>
+        <div class="Acerca">
+            <h3>Acerca de...</h3>
+            <p>Información de la empresa</p>
+        </div>
+        <div class="soporte">
+            <h3>Soporte</h3>
+            <p>Chat en linea</p>
+        </div>
+    </nav>
+</footer>
+</body>
+</html>

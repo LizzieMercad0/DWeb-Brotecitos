@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Config.Logo + diseño responsive*/
+.logoinicio{
+    margin-left: 30px;
+}
+
+@media (max-width:700px){
+    .logoinicio{
+        margin-left: 10px;
+        width: 100px;
+    }
+}
+/**/
+
+/*Background navbar + footer*/
+header, footer{
+    background-color: #9dc582;
+    padding-inline-start:10px;
+    width: 100%;
+}
+/**/
+
+/*Config.navbar + diseño responsive*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.lista, #menu{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 20px 30px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+    .lista, #menu{
+        list-style: none;
+        display: flex;
+        margin: auto;
+        padding: 2px 3px;
+        font-size: 14px;
+        font-weight: 400px;
+        font-family:"DM Sans", sans-serif;
+        font-style:normal;
+        cursor: pointer;
+    }
+}
+/**/
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+/*Inicio*/
+
+.inicio{
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    width: 100%;
+    font-size: 50px;
+    font-weight: 700;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+    margin: 0 auto;
+}
+
+@media (max-width:700px){
+    .texto{
+        width: 100%;
+        font-size: 30px;
+        font-family:"DM Sans", sans-serif;
+        font-style:normal;
+    }
+}
+
+.parrafo-inicio{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+}
+
+@media (max-width:700px){
+    .parrafo-inicio{
+        width: 100%;
+        font-size: 15px;
+        font-weight: 700px;
+        font-family:"DM Sans", sans-serif;
+        font-style:normal;
+    }
+}
+
+/*Config.boton registrarse + diseño responsive*/
+.registrarse{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    width: 192px;
+    height: 48px;
+    border-radius: 20px;
+    background-color: #618837;
+    cursor: pointer;
+}
+.registrarse:hover{
+    background-color:#9dc582;
+    color: black;
+    font-weight: 700;
+}
+
+
+@media (max-width:700px){
+    .registrarse{
+        margin-top: 10px;
+        width: 181px;
+        height: 39px;
+        border-radius: 10px;
+        background-color: #618837;
+        cursor: pointer;
+    }
+}
+/**/
+
+/*Conf.tex.categoria y producto*/
+#centro1{
+    text-align: center;
+    padding: 80px;
+}
+
+#centro2{
+    text-align: center;
+    padding: 80px;
+}
+
+@media (max-width:700px){
+    #centro1{
+        text-align: center;
+        padding: 50px;
+        font-size: 14px;
+    }
+    
+    #centro2{
+        text-align: center;
+        padding: 50px;
+        font-size: 14px;
+    }
+}
+/**/
+
+/* Conf.Galeria de inicio + dis. Responsive*/
+
+.galeriainicio{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 325px 205px 205px;
+    grid-template-rows: 255px 255px;
+    column-gap: 10px;
+    
+    justify-content: center;
+
+    overflow: hidden;
+    align-items: center;
+
+    grid-template-areas:
+    "plantascolgantes todosobreflores todosobreflores" 
+    "plantascolgantes familiatrepadoras todosobrecactus"
+    ;
+}
+.plantascolgantes{
+    grid-area: plantascolgantes;
+    width: 325px;
+    height: 500px;
+    background-color: #487835;
+}
+
+.todosobreflores{
+    grid-area: todosobreflores;
+    width: 420px;
+    height: 245px;
+    background-color: #4B7045;
+}
+
+.familiatrepadoras{
+    grid-area: familiatrepadoras;
+    width: 205px;
+    height: 245px;
+    background-color: #6D955E;
+}
+
+.todosobrecactus{
+    grid-area: todosobrecactus;
+    width: 205px;
+    height: 245px;
+    background-color: #436645;
+}
+
+@media (max-width:700px){
+    .galeriainicio{
+        height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 230px 210px;
+        grid-gap: 5px;
+
+        justify-content: center;
+        justify-items: center;
+
+        grid-template-areas:
+        "plantascolgantes plantascolgantes" 
+        "todosobreflores todosobreflores"
+        "familiatrepadoras todosobrecactus"
+    ;
+    }
+    .plantascolgantes{
+        grid-area: plantascolgantes;
+        width: 300px;
+        height: 400px;
+        background-color: #487835;
+    }
+    
+    .todosobreflores{
+        grid-area: todosobreflores;
+        width: 340px;
+        height: 220px;
+        background-color: #4B7045;
+    }
+    
+    .familiatrepadoras{
+        grid-area: familiatrepadoras;
+        width: 170px;
+        height: 210px;
+        background-color: #6D955E;
+    }
+    
+    .todosobrecactus{
+        grid-area: todosobrecactus;
+        width: 170px;
+        height: 210px;
+        background-color: #436645;
+    }
+}
+/*  */
+
+.categorias2 {
+    width:400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*Config.productos + dis.responsive */
+.productos-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto_card{
+    width: 250px;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 1px solid grey;
+    padding: 10px 10px;
+    border-radius: 24px;
+}
+
+.image_card{
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.producto_card h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.precio_card{
+    display: flex;
+    justify-content: center;
+    width: 37px;
+    height: 38px;
+    position: absolute;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    top: 195px;
+    left: 175px;
+}
+
+.producto_card p{
+    font-size: 14px;
+    width: 230px;
+}
+
+.comprar_card{
+    padding:10px;
+}
+
+.comprarahora{
+    width: 142px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 14px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+@media (max-width:700px){
+    .productos-card-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        padding: 20px 20px;
+        border-radius: 24px;
+    }
+}
+/*  */
+
+/* Config.Extra + dis.responsive*/
+
+.extra_container{
+    height: 250px;
+    width: 100%;
+    background-color: #9dc582;
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: 60px 237px 60px 237px 60px 237px;
+    column-gap: 30px;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+    /* Config.envios gratis */
+.envios h2{
+    font-size: 20px;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+}
+.envios p{
+    font-size: 12px;
+}
+
+    /* Pagos con descuentos */
+.pagos h2{
+    font-size: 20px;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+}
+.pagos p{
+    font-size: 12px;
+}
+
+    /* Escribenos */
+.contacto h2{
+    font-size: 20px;
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+}
+.contacto p{
+    font-size: 12px;
+}
+
+@media (max-width:700px){
+    .extra_container{
+        height: 150px;
+        width: 100%;
+        background-color: #9dc582;
+        margin-top: 80px;
+        column-gap: 15px;
+        
+        justify-content: center;
+        align-items: center;
+
+        display: flex;
+        overflow: hidden;
+    }
+        /* Config.envios gratis */
+            .envios h2{
+                font-size: 10px;
+                font-family:"DM Sans", sans-serif;
+                font-style:normal;
+            }
+
+            .image_envios{
+                width: 25px;
+                height: 25px;
+            }
+            .envios p{
+                font-size: 9px;
+}
+/* Pagos con descuentos */
+
+            .image_pagos{
+                width: 25px;
+                height: 25px;
+}
+            .pagos h2{
+                font-size: 10px;
+                font-family:"DM Sans", sans-serif;
+                font-style:normal;
+}
+            .pagos p{
+                font-size: 8px;
+}
+
+/* Escribenos */
+            .contacto h2{
+                font-size: 10px;
+                font-family:"DM Sans", sans-serif;
+                font-style:normal;
+}
+            .contacto p{
+                font-size: 9px;
+}
+
+            .image_contacto{
+                width: 25px;
+                height: 25px;
+}
+}
+
+
+/* Centro 3 + diseño responsive */
+
+.centro3{
+    width: 500px;
+    height: 266px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.nos_pondremos{
+    padding-top: 10px;
+}
+
+.gangas{
+    padding-top: 5px;
+}
+
+.gangas p{
+    padding-top: 10px;
+}
+
+.form{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 12px;
+}
+/* Config. buttom suscrib */
+.suscribirse{
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #618837;
+    cursor: pointer;
+}
+
+.suscribirse:hover{
+    background-color:#9dc582;
+    font-weight: 700;
+    color: black;
+}
+
+@media (max-width:700px){
+    .centro3{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    
+    .nos_pondremos h4{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    
+    .gangas h2{
+        padding-top: 10px;
+        font-family:"DM Sans", sans-serif;
+        font-style:normal;
+        font-size: 15px;
+    }
+    
+    .gangas p{
+        padding: 10px;
+        font-size: 9px;
+    }
+    .form{
+        width: 150px;
+        height: 25px;
+    }
+}
+/*  */
+
+/* Confi.footer + dis. responsive */
+
+.footer h2{
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.footer_nav{
+    display: grid;
+    grid-template-columns: 230px 100px 150px 100px;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+@media (max-width:700px){
+    .footer h2{
+        margin-top: 80px;
+        font-size: 20px;
+    }
+    
+    .footer_nav{
+        display: grid;
+        grid-template-columns: 90px 80px 80px 80px;
+        column-gap: 10px;
+        justify-content: space-around;
+        padding: 5px;
+        width: 100%;
+        height: 150px;
+    }
+    .contactanos h3{
+        font-size: 12px;
+    }
+    .contactanos p{
+        font-size: 9px;
+    }
+    .productos h3{
+        font-size: 12px;
+    }
+    .productos p{
+        font-size: 9px;
+    }
+    .Acerca h3{
+        font-size: 12px;
+    }
+    .Acerca p{
+        font-size: 9px;
+    }
+    .soporte h3{
+        font-size: 12px;
+        }
+    .soporte p{
+        font-size: 9px;
+}
+}
+
+
+
+/*Conf. extras para la web*/
+a, h1, p, h3, h2, button, input,label,h5{
+    font-family:"DM Sans", sans-serif;
+    font-style:normal;
+    padding: 2px;
+}
+
+::selection{
+    color: white;
+    background-color: #6D955E;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+} 
+
