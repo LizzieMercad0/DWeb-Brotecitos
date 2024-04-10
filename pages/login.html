@@ -3,68 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins:wght@400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Iniciar Sesión</title>
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+    <title>Inicia Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/image/login.png" type="image/x-icon">
 </head>
 <body>
 <!--Nav-->
 <header>
-    <nav class="navbar">
-        <a href="index.html">
-            <img src="../assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100" height="100">
-        </a>
-        <ul id="menu">
-            <li class="lista">
-                <a href="../index.html"> Inicio</a>
-            </li>
-            <li class="lista">
-                <a href="../pages/product.html"> Tienda</a>
-            </li>
-            <li class="lista">
-                <a href="#acercade"> Acerca de </a>
-            </li>
-            <li class="lista">
-                <a href="../pages/contacts.html"> Contacto</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/product.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacts.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        </div>
     </nav>
 </header>
-</header>
     <main>
-        <h1>Inicia Sesión</h1>
-        <p>Y disfruta de todas las ventajas de ser miembro de Brotecitos.</p>
+
+        <section class="row p-5">
+            <div class="col-6 p-5" style="background-image: url();">
+                <h1>Inicia Sesión</h1>
+                <p>Y disfruta de todas las ventajas de ser miembro de Brotecitos.</p>
+            </div>
+            
+        <div class="col-6 p-5">
+            <form action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <h1>¡Bienvenida de nuevo!</h1>
+                    <p>Conoce lo que tenemos para ofrecerte hoy</p>
+                </div>
+                <div class="col-12">
+                    <div class="col pt-4">
+                        <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Introduzca su correo" aria-label="Introduzca su correo" required>
+                    </div>
+                    <div class="col">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Introduzca su contraseña" aria-label="Introduzca su contraseña" required>
+                    </div>
+                </div>
+                <p class="pt-5 text-center">¿No posee una cuenta?
+                    <a href="./createaccount.html">Registrarse</a></p>
+                
+            </form>
+        </div>
+        </section>
+        
     </main>
-<!--Formulario-->
-    <form action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
-        <h1>¡Bienvenida de nuevo!</h1>
-        <p>Conoce lo que tenemos para ofrecerte hoy</p>
-        <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Escribre tu e-mail" required />
-        </div>
-        <div>
-            <label for="password">Contraseña</label>
-            <input type="password" name="contraseña" id="password" placeholder="Escribe tu contraseña"/>
-        </div>
-        <div>
-            <h5>Olvide mi contraseña</h5>
-        </div>
-        <div>
-            <input type="submit" value="Iniciar Sesión">
-        </div>
-    </form>
-    <p>¿No tienes cuenta aún? <a href="./createaccount.html">Registrate</a></p>
+    
 
 <!-- Footer -->
-<footer class="footer">
-    <h2>Brotecitos</h2>
-    <nav class=footer_nav>
-        <div class="contactanos">
-            <h3>Contactos</h3>
+<footer class="footer" style="background-color:#A8CA7E;">
+    
+    <nav class= "row mx-auto">
+        <div class="col-md-3">
+            <h5>Contactos</h5>
             <p>abcdefgh@gmail.com</p>
             <p>+1-2345-6789</p>
             <p>123 Ave, Córdoba, Argentina</p>
@@ -72,23 +85,24 @@
             <img src="../assets/image/facebook.png" alt="Enlace a facebook">
             <img src="../assets/image/x.png" alt="Enlace a X">
         </div>
-        <div class="productos">
-            <h3>Productos</h3>
+        <div class="col-md-3">
+            <h5>Productos</h5>
             <p>Suculentas</p>
             <p>Monsteras</p>
             <p>Pothus</p>
             <p>Rosario</p>
             <p>Cactus</p>
         </div>
-        <div class="Acerca">
-            <h3>Acerca de...</h3>
+        <div class="col-md-3">
+            <h5>Acerca de...</h5>
             <p>Información de la empresa</p>
         </div>
-        <div class="soporte">
-            <h3>Soporte</h3>
+        <div class="col-md-3">
+            <h5>Soporte</h5>
             <p>Chat en linea</p>
         </div>
     </nav>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,180 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins:wght@400;500;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Brotecitos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="./assets/image/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
 <!--Nav-->
 <header>
-        <nav class="navbar">
-            <a href="./index.html" class="logoinicio">
-                <img src="./assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100%" height="100px">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100" height="100">
             </a>
-            <ul id="menu">
-                <li class="lista">
-                    <a href="./index.html"> Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                 </li>
-                <li class="lista">
-                    <a href="./pages/product.html"> Tienda</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/product.html">Tienda</a>
                 </li>
-                <li class="lista">
-                    <a href="#acercade"> Acerca de </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
                 </li>
-                <li class="lista">
-                    <a href="./pages/contacts.html"> Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacts.html">Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+        </div>
+    </nav>
 </header>
 
-<!-- CuerpoWeb-->
     <main>
         <!--Inicio-->
-        <section class="inicio">
-            <div class="texto-inicio">
-                <div id="inicio-texto">
-                    <H1 class="texto"> ¡Deja que tu belleza brote!</H1>
-                    <p class="parrafo-inicio">Sé única, elige aretes que reflejen tu personalidad y amor por la naturaleza</p>
-                </div>
-                <a href="./pages/createaccount.html"> <button class="registrarse"> Regístrarme</button></a>
+        <section class="container p-5">
+            <div class="row">
+            <div class="col-md-6">
+                <h1 class="pt-5">¡Deja que tu belleza brote!</h1>
+                <p>Sé única, elige aretes que reflejen tu personalidad y amor por la naturaleza</p>
+                <a href="./pages/createaccount.html" class="btn btn-primary">Registrarme</a>
             </div>
-            <img src="./assets/image/inicio.png" alt="Imagen ilustrativa" width="50%" >
+            <div id="carouselExampleSlidesOnly" class="col-md-6 d-none d-md-block carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/image/inicio.png" class="d-block w-100" alt="..." style="width: 200px; height: 500px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/inicio2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/image/inicio3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
+        <!--  -->
             
 <!--Centro 1 -->
-            <div id="centro1">
-                <h4>Nuestras Exclusivas</h4>
-                <h2>Categorías</h2>
-            </div>
-<!--Categorias-->
-            <section class="galeriainicio">
-                <div class="plantascolgantes">
-                    <img src="./assets/image/Plantas_colgantes.png" alt="Plantas colgantes" width="100%" height="100%">
-                    <H3 id="texcolgantes"> PLANTAS COLGANTES</H3>
-                </div>
-                <div class="todosobreflores">
-                    <img src="./assets/image/todo_sobre_flores.png" alt="Todo sobre flores" width="150px" height="150px">
-                    <h3 id="texflores">TODO SOBRE FLORES</h3>
-                </div>
-                <div class="familiatrepadoras">
-                    <img src="./assets/image/familia_trepadoras.png" alt="Familia de las trepadoras"  width="150px" height="150px">
-                    <h3 id="textrepadoras">FAMILIA DE LAS TREPADORAS</h3>
-                </div>
-                <div class="todosobrecactus">
-                    <img src="./assets/image/todo_sobre_cactus.png" alt="Todo sobre cactus" width="150px" height="150px">
-                    <h3 id="texcactus">TODO SOBRE CACTUS</h3>
-                </div>
-            </section>
-                
-                
-<!--Algunos productos-->
-            <div id="centro2">
-                <h4>Más de nuestros</h4>
-                <h2>Productos</h2>
-            </div>
-            <div class="productos-card-container">
-            <!-- card 1 -->
-                <article class="producto_card">
-                    <div class="image_card">
-                        <img src="./assets/image/cactus_producto.png" alt="Arito de cactus" width="248px" height="170px"/>
-                    </div>
-                    
-                    <div class="div_card">
-                        <h3>Arito de cactus</h3>
-                        <p>Símbolo de resistencia y persistencia</p>
-                    </div>
-                    <div class="precio_card">
-                        <span>$0</span>
-                    </div>
-                    <div class="comprar_card">
-                        <a href="#"> <button class="comprarahora">Comprar ahora</button></a>
-                    </div>
-                </article>
-            <!-- Card 2 -->
-            <article class="producto_card">
-                <div class="image_card">
-                    <img src="./assets/image/cactus_producto.png" alt="Arito de cactus" width="248px" height="170px"/>
-                </div>
-                
-                <div class="div_card">
-                    <h3>Arito de cactus</h3>
-                    <p>Símbolo de resistencia y persistencia</p>
-                </div>
-                <div class="precio_card">
-                    <span>$0</span>
-                </div>
-                <div class="comprar_card">
-                    <a href="#"> <button class="comprarahora">Comprar ahora</button></a>
-                </div>
-            </article>
-            <!-- Card 3 -->
-            <article class="producto_card">
-                <div class="image_card">
-                    <img src="./assets/image/cactus_producto.png" alt="Arito de cactus" width="248px" height="170px"/>
-                </div>
-                
-                <div class="div_card">
-                    <h3>Arito de cactus</h3>
-                    <p>Símbolo de resistencia y persistencia</p>
-                </div>
-                <div class="precio_card">
-                    <span>$0</span>
-                </div>
-                <div class="comprar_card">
-                    <a href="#"> <button class="comprarahora">Comprar ahora</button></a>
-                </div>
-            </article>
+            <div class="text-center p-5">
+                <h5>Nuestras Exclusivas</h5>
+                <h6>Categorías</h6>
             </div>
 
+<!--Categorias/ galeria-->
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-5" style="background-color:;">
+                    <img class="image-fluid" src="./assets/image/Plantas_colgantes.png" alt="Plantas colgantes">
+                    <h6 class="texto"> PLANTAS COLGANTES</h6>
+                </div>
+                <div class="col-md-6 col-md-5" style="background-color:;">
+                    <img src="./assets/image/todo_sobre_flores.png" alt="Todo sobre flores" width="200px" height="200px">
+                    <h6 class="texto">TODO SOBRE FLORES</h6>
+                    <div class="row">
+                        <div class="col-md-6 col-md-5" style="background-color:;">
+                            <img src="./assets/image/familia_trepadoras.png" alt="Familia de las trepadoras"  width="200px" height="220px">
+                            <h6 class="texto">FAMILIA DE LAS TREPADORAS</h6>
+                        </div>
+                        <div class="col-md-6 col-md-5" style="background-color:;">
+                            <img src="./assets/image/todo_sobre_cactus.png" alt="Todo sobre cactus" width="220px" height="200px">
+                            <h6 class="texto">TODO SOBRE CACTUS</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--  -->
+
+<!--Centro2-->
+        <div class="text-center  p-5">
+            <h5>Más de nuestros</h5>
+            <h6>Productos</h6>
+        </div>
+<!--  -->
+<!-- Algunos productos -->
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
+                    <div class="card mx-auto" style="width: 250px;">
+                        <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aritos de Margarita</h5>
+                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
+                    <div class="card mx-auto" style="width: 250px;">
+                        <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aritos de Margarita</h5>
+                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
+                    <div class="card mx-auto" style="width: 250px;">
+                        <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aritos de Margarita</h5>
+                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
+                    <div class="card mx-auto" style="width: 250px;">
+                        <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="..." style="height: 160px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Aritos de Margarita</h5>
+                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--  -->
+
+
 <!-- Extra-->
-            <section class="extra_container">
-                <img class="image_envios" src="./assets/image/envio.png" alt="Envios Gratis" width="60px" height="60px">
-                <div class="envios">
-                    <h2>Envios Gratis</h2>
+            <section class="contanier pt-5" style="background-color: ;" >
+                <div class="row p-5 mx-auto">
+                    <img class="col-md-1" src="./assets/image/envio.png" alt="Envios Gratis" style="width: 80px; height:60px;">
+                <div class="col-md-3">
+                    <h5>Envios Gratis</h5>
                     <p>A la sucursal a partir de $...</p>
                 </div>
-                <img class="image_pagos" src="./assets/image/billetera.png" alt="Pagos" width="60px" height="60px">
-                <div class="pagos">
-                    <h2>Pagos con descuento</h2>
+                <img class="col-md-1"  src="./assets/image/billetera.png" alt="Pagos" style="width: 75px; height:60px;">
+                <div class="col-md-3">
+                    <h5>Pagos con descuento</h5>
                     <p>20% OFF en efectivo</p>
                     <p>10% OFF con transferencia</p>
                     <p>3 cuotas sin interés con tarjetas de credito</p>
                 </div>
-                <img class="image_contacto" src="./assets/image/whatsapp.png" alt="Logo whatsapp" width="60px" height="60px">
-                <div class="contacto">
-                    <h2>Escríbenos</h2>
+                <img class="col-md-1"  src="./assets/image/whatsapp.png" alt="Logo whatsapp" style="width: 80px; height:60px;">
+                <div class="col-md-3">
+                    <h5>Escríbenos</h5>
                     <p>Haznos llegar tus dudas</p>
                 </div>
+                </div>
+                
             </section>
 
 <!-- Centro 3 -->
-            <section class="centro3" >
-                <div class="nos_pondremos">
-                    <h4>Nos pondremos en contacto</h4>
+            <section class="row text-center p-5" style="background-color: ;">
+                <div class="col-md-12">
+                    <h6>Nos pondremos en contacto</h6>
                 </div>
-                <div class="gangas">
-                    <h2>¿Eres fan de las gangas?</h2>
+                <div class="col-md-6 mx-auto">
+                    <h4>¿Eres fan de las gangas?</h4>
                     <p>¡No te pierdas ni una! Suscríbete a nuestro newsletter y recibe antes que nadie las mejores ofertas y descuentos. Te avisaremos antes de que tus amigas se enteren</p>
                 </div>
-                <div class="formulario">
-                    <form action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded"></form>
-                    <input class="form" type="text" id="email" name="email" placeholder="Escribe tu e-mail" required />
-                    <a href=""><button class="suscribirse">Suscríbirme</button></a>
+                <div class="row g-2 justify-content-center">
+                    <div class="col-md-6 form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Dirección de email</label>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Subscribirse</button>
+                    </div>
                 </div>
+                <div id="emailHelp" class="form-text p-2">Nunca compartiremos su correo con nadie más.</div>
                 </section>
         </main>
 
 <!-- Footer -->
-<footer class="footer">
-    <h2>Brotecitos</h2>
-    <nav class=footer_nav>
-        <div class="contactanos">
-            <h3>Contactos</h3>
+<footer class="footer" style="background-color:#A8CA7E;">
+    <nav class= "row mx-auto p-5">
+        <div class="col-md-3">
+            <h5>Contactos</h5>
             <p>abcdefgh@gmail.com</p>
             <p>+1-2345-6789</p>
             <p>123 Ave, Córdoba, Argentina</p>
@@ -184,23 +208,25 @@
             <img src="./assets/image/facebook.png" alt="Enlace a facebook">
             <img src="./assets/image/x.png" alt="Enlace a X">
         </div>
-        <div class="productos">
-            <h3>Productos</h3>
+        <div class="col-md-3">
+            <h5>Productos</h5>
             <p>Suculentas</p>
             <p>Monsteras</p>
             <p>Pothus</p>
             <p>Rosario</p>
             <p>Cactus</p>
         </div>
-        <div class="Acerca">
-            <h3>Acerca de...</h3>
+        <div class="col-md-3">
+            <h5>Acerca de...</h5>
             <p>Información de la empresa</p>
         </div>
-        <div class="soporte">
-            <h3>Soporte</h3>
+        <div class="col-md-3">
+            <h5>Soporte</h5>
             <p>Chat en linea</p>
         </div>
     </nav>
 </footer>
+<!--  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
