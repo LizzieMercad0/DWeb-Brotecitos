@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2-mercado",
+  "version": "1.0.0",
+  "description": "Pagina web ¿Buscas joyas únicas que te conecten con la tierra? En Brotecitos, creamos hermosos aretes hechos a mano. Cada pieza es una pequeña obra de arte que captura la belleza del mundo vegetal.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizzieMercad0/DWeb-Brotecitos.git"
+  },
+  "author": "Lizzie Mercado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizzieMercad0/DWeb-Brotecitos/issues"
+  },
+  "homepage": "https://github.com/LizzieMercad0/DWeb-Brotecitos#readme"
+}
