@@ -1,17 +1,4 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-.btn{
-    margin-top: 20px;
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    width: 192px;
-    height: 48px;
-    border-radius: 20px;
-    background-color: #618837;
-    cursor: pointer;
-}
+@import "utilities/variables";
+@import "base/reset";
+@import "base/fonts";
+@import "base/typography";

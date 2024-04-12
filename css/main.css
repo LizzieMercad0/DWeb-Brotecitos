@@ -4,16 +4,13 @@
   box-sizing: border-box;
 }
 
-.btn {
-  margin-top: 20px;
-  font-size: 16px;
-  font-weight: 500;
-  color: white;
-  width: 192px;
-  height: 48px;
-  border-radius: 20px;
-  background-color: #618837;
-  cursor: pointer;
+@font-face {
+  font-family: "DM Sans", sans-serif;
+  src: url(../assets/fonts/DMSans_18pt-Bold.ttf);
+}
+.p_footer {
+  color: #363940;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
