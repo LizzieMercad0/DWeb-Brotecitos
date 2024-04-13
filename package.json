@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LizzieMercad0/DWeb-Brotecitos/issues"
   },
-  "homepage": "https://github.com/LizzieMercad0/DWeb-Brotecitos#readme"
+  "homepage": "https://github.com/LizzieMercad0/DWeb-Brotecitos#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }
