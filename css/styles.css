@@ -12,13 +12,6 @@
     margin: 0 auto;
 }
 /*  */
-
-/* Buttons */
-.btn-primary{
-    background-color: #618837 ;
-}
-/*  */
-
 /*Config.botones*/
 .registrarse{
     margin-top: 20px;
@@ -63,3 +56,32 @@
     font-size: 14px;
 }
 
+
+/* TIENDA */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }

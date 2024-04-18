@@ -4,12 +4,3 @@
 @import "base/typography";
 @import "components/buttons";
 @import "layout/layout";
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-$primary: #267c15;
-$danger: #ff4136;
-
-$theme-colors: (
-    "primary": $primary,
-    "danger": $danger
-);
