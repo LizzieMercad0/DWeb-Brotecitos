@@ -6,13 +6,15 @@
 @import "layout/layout";
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
-$primary: #9dc582;
-$danger: #ff4136;
-
-$theme-colors: (
-    "primary": $primary,
-    "danger": $danger
+// Create your own map
+$custom-colors: (
+    "primary": #9dc582,
+    "secondary": #6c757d,
+    "success": #28a745,
 );
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
