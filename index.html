@@ -11,7 +11,7 @@
 <body>
 <!--Nav-->
 <header>
-    <nav class="navbar navbar-expand-lg" style="background-color:#A8CA7E;">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/image/namefavicon.ico" alt="Logo Brotecitos" width="100" height="100">
@@ -46,12 +46,12 @@
             <div class="col-md-6 sm-2">
                 <h1 class="pt-5">¡Deja que tu belleza brote!</h1>
                 <p>Sé única, elige aretes que reflejen tu personalidad y amor por la naturaleza</p>
-                <a href="./pages/createaccount.html" class="btn btn-primary">Registrarse</a>
+                <a href="./pages/createaccount.html" class="btn btn-secondary text-light">Registrarse</a>
             </div>
             <div id="carouselExampleSlidesOnly" class="col-md-6 sm-2 d-md-block carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/image/inicio.png" class="d-block w-100" alt="..." style="width: 200px; height: 500px;">
+                        <img src="./assets/image/inicio1.jpg" class="d-block w-100" alt="..." style="width: 200px; height: 500px;">
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/image/inicio2.png" class="d-block w-100" alt="..." style="width: 200px; height: 500px;">
@@ -64,118 +64,165 @@
         </div>
         </section>
         <!--  -->
-            
-<!--Centro 1 -->
-            <div class="text-center p-5">
-                <h5>Nuestras Exclusivas</h5>
-                <h6>Categorías</h6>
-            </div>
-
-<!--Categorias/ galeria-->
-        <section class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-5" style="background-color:;">
-                    <img src="./assets/image/Plantas_colgantes.png" alt="Plantas colgantes" style="width: 350px; height: 368px">
-                    <h6 class="texto"> PLANTAS COLGANTES</h6>
-                </div>
-                <div class="col-md-6 col-md-5" style="background-color:;">
-                    <img src="./assets/image/todo_sobre_flores.png" alt="Todo sobre flores" width="160px" height="160px">
-                    <h6 class="texto">TODO SOBRE FLORES</h6>
-                    <div class="row">
-                        <div class="col-md-6 col-md-5" style="background-color:;">
-                            <img src="./assets/image/familia_trepadoras.png" alt="Familia de las trepadoras"  width="160px" height="160px">
-                            <h6 class="texto">FAMILIA DE LAS TREPADORAS</h6>
-                        </div>
-                        <div class="col-md-6 col-md-5" style="background-color:;">
-                            <img src="./assets/image/todo_sobre_cactus.png" alt="Todo sobre cactus" width="160px" height="160px">
-                            <h6 class="texto">TODO SOBRE CACTUS</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!--  -->
-
-<!--Centro2-->
+<!--Centro1-->
         <div class="text-center  p-5">
             <h5>Más de nuestros</h5>
             <h6>Productos</h6>
         </div>
 <!--  -->
 <!-- Algunos productos -->
-        <section class="container p-5 mx-auto">
-            <div class="row">
-                <div class="col-lg-3 mb-2 mb-sm-0 p-2 md-3">
-                    <div class="card mx-auto" style="width: 230px; height: 330px;">
-                        <img src="./assets/image/margaritas_producto.png" class="card-img-top p-2" alt="..." style="height: 160px; width: 230px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Aritos de Margarita</h5>
-                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
-                        <a href="#" class="btn btn-primary">Comprar ahora</a>
+        <!-- <section class="container p-5 mx-auto"> -->
+        <section class="p-5">
+            <div id="carouselExample" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card d-none d-md-block">
+                                    <img src="./assets/image/monstera_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Monstera</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>                                
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                    <img src="./assets/image/cactus_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Cactus</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                    <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Margaritas</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card d-none d-md-block">
+                                    <img src="./assets/image/monstera_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Monstera</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>                                
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                    <img src="./assets/image/cactus_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Cactus</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                    <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Margaritas</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card d-none d-md-block">
+                                    <img src="./assets/image/monstera_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Monstera</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>                                
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                    <img src="./assets/image/cactus_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Cactus</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                            <div class="card d-none d-md-block">
+                                    <img src="./assets/image/margaritas_producto.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Margaritas</h5>
+                                        <span class="badge bg-primary text-dark pt-2">$0.00</span>
+                                    </div>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Comprar ahora</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
-                    <div class="card mx-auto" style="width: 230px; height: 330px;">
-                        <img src="./assets/image/margaritas_producto.png" class="card-img-top p-2" alt="..." style="height: 160px; width: 230px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Aritos de Margarita</h5>
-                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
-                        <a href="#" class="btn btn-primary">Comprar ahora</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
-                    <div class="card mx-auto" style="width: 230px; height: 330px;">
-                        <img src="./assets/image/margaritas_producto.png" class="card-img-top p-2" alt="..." style="height: 160px; width: 230px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Aritos de Margarita</h5>
-                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
-                        <a href="#" class="btn btn-primary">Comprar ahora</a>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-3 mb-sm-0 p-2 md-6">
-                    <div class="card mx-auto" style="width: 230px; height: 330px;">
-                        <img src="./assets/image/margaritas_producto.png" class="card-img-top p-2" alt="..." style="height: 160px; width: 230px;">
-                    <div class="card-body">
-                        <h5 class="card-title">Aritos de Margarita</h5>
-                        <p class="card-text">Símbolo de resistencia y persistencia.</p>
-                        <a href="#" class="btn btn-primary">Comprar ahora</a>
-                    </div>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 <!--  -->
 
 
 <!-- Extra-->
-            <section class="row" style="background-color: #F4F5F6" >
+            <section class="row bg-success" >
                 <div class="container mx-auto" style="width: 1152px;">
                     <div class="row p-5 mx-auto">
-                    <img class="col-md-1" src="./assets/image/envio.png" alt="Envios Gratis" style="width: 80px; height:60px;">
-                <div class="col-md-3">
-                    <h5>Envios Gratis</h5>
-                    <p>A la sucursal a partir de $...</p>
+                            <img class="col-md-1" src="./assets/image/envio.png" alt="Envios Gratis" style="width: 80px; height:60px;">
+                        <div class="col-md-3">
+                            <h5>Envios Gratis</h5>
+                            <p>A la sucursal a partir de $...</p>
+                        </div>
+                            <img class="col-md-1"  src="./assets/image/billetera.png" alt="Pagos" style="width: 75px; height:60px;">
+                        <div class="col-md-3">
+                            <h5>Pagos con descuento</h5>
+                            <p>20% OFF en efectivo</p>
+                            <p>10% OFF con transferencia</p>
+                            <p>3 cuotas sin interés con tarjetas de credito</p>
+                        </div>
+                            <img class="col-md-1"  src="./assets/image/whatsapp.png" alt="Logo whatsapp" style="width: 80px; height:60px;">
+                        <div class="col-md-3">
+                            <h5>Escríbenos</h5>
+                            <p>Haznos llegar tus dudas</p>
+                        </div>
+                    </div>
                 </div>
-                <img class="col-md-1"  src="./assets/image/billetera.png" alt="Pagos" style="width: 75px; height:60px;">
-                <div class="col-md-3">
-                    <h5>Pagos con descuento</h5>
-                    <p>20% OFF en efectivo</p>
-                    <p>10% OFF con transferencia</p>
-                    <p>3 cuotas sin interés con tarjetas de credito</p>
-                </div>
-                <img class="col-md-1"  src="./assets/image/whatsapp.png" alt="Logo whatsapp" style="width: 80px; height:60px;">
-                <div class="col-md-3">
-                    <h5>Escríbenos</h5>
-                    <p>Haznos llegar tus dudas</p>
-                </div>
-                </div>
-
-                </div>
-                
-                
             </section>
 
 <!-- Centro 3 -->
@@ -194,7 +241,7 @@
                     <label for="floatingInput">Dirección de email</label>
                     </div>
                     <div class="col-auto">
-                        <button type="submit" class="btn btn-primary">Subscribirse</button>
+                        <button type="submit" class="btn btn-secondary text-light">Subscribirse</button>
                     </div>
                 </div>
                 <div id="emailHelp" class="form-text p-2">Nunca compartiremos su correo con nadie más.</div>
@@ -204,7 +251,7 @@
         </main>
 
 <!-- Footer -->
-<footer class="footer" style="background-color:#A8CA7E;">
+<footer class="footer bg-primary">
     <nav class= "row mx-auto p-5" >
         <div class="col-md-3" >
             <h5>Contactos</h5>

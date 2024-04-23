@@ -10,11 +10,64 @@
 
 // Create your own map
 $custom-colors: (
-    "primary": #809671,
-    "secondary": #6c757d,
-    "success": #28a745,
+    "primary":#b3cf99,
+    "secondary": #658354,
+    "success": #F4F5F6,
 );
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// INDEX- algunos productos
+
+@media (min-width: 768px) {
+    .card img {
+        height: 11em;
+    }
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.card img {
+    justify-content: center;
+    height: 160px; 
+    width: 250px;
+}
+.card {
+    margin: 0 0.5em;
+    width: 250px;
+    height: auto;
+    border:  2px solid #F4F5F6;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+
+// CREAR UNA CUENTA -FONDO 
+
+.fondo{
+    background-image: url(../assets/image/img_account.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+// INICIA SESION
+.fondo1{
+    background-image: url(../assets/image/img-login.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+// TIENDA  - BOTON CARGAR
+.cargar{
+    text-align: center;
+    padding: 100px;
+
+}
+
