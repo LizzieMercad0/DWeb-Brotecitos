@@ -1,4 +1,3 @@
-@import "utilities/variables";
 @import "base/reset";
 @import "base/fonts";
 @import "../node_modules/bootstrap/scss/functions";
@@ -68,3 +67,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 }
 
+// footer
+.p_footer{
+    color: #55575e;
+}
